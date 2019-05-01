@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 14pt;
+	color: rgba(56, 56, 56, 0.925);
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body>article {
+	margin-bottom: 0;
+}
+
+strong {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h1 a,
+h2 a,
+h3 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+hr {
+	height: 1px;
+	margin: 2em 0;
+	border: 0;
+	border-top: solid 1px rgb(71, 71, 71);
+	border-top-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0);
+}
+
+article,
+header {
+	margin-bottom: 3em;
+}
+
+header>p {
+	font-size: 1.25em;
+	margin: 0;
+	color: inherit
+}
+
+#about {
+	padding: 10em 0 10em 0;
+	text-align: left;
+}
+
+.about-p {
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 95%;
+	width: 95%
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	align-items: stretch;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+
+.image-col {
+	box-sizing: border-box;
+	padding: 25px 0 0 25px;
+	width: 33.33%;
+}
+
+.profile-header-col {
+	width: 66.67%;
+}
+
+.profile-name {
+	padding: 25px 0 0 0;
+}
+
+.image {
+	display: inline-block;
+	position: relative;
+}
+
+.profile-image {
+	display: block;
+	width: 100%;
+	border-radius: 100%;
+}
+
+.image.profile {
+	display: block;
+	width: 100%;
+	width: 20em;
+	height: 20em;
+	margin: 0;
+}
+
+.portfolio-image {
+	display: block;
+	width: 100%;
+}
+
+.image.portfolio {
+	display: block;
+	position: relative;
+	left: 2em;
+	top: 2em;
+	margin: -4em 0 4em -4em;
+	width: auto;
+}
+
+.contact {
+	cursor: default;
+	margin: 0;
+	list-style: none;
+	padding-left: 0;
+}
+
+.contact-li {
+	position: relative;
+	display: inline-block;
+	margin: 0.25em;
+	top: 0;
+	padding-left: 0;
+}
+
+.box {
+	background: #fff;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	padding: 2em;
+}
+
+.background {
+	box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+	padding: 8em 0 8em 0;
+	text-align: center;
+}
+
+.light {
+	background-color: #fff;
+}
+
+.dark {
+	background-color: #f4f4f4;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+@media screen and (max-width: 1280px) {
+
+	#about {
+		text-align: center;
+		padding: 5em 0;
+	}
+
+	.image.profile {
+		margin: 0 auto 2em auto;
+	}
+
+	.profile-image-col {
+		width: 100%;
+		padding: 25px 0 0 25px;
+	}
+
+	.profile-header-col {
+		width: 100%;
+		padding: 25px 0 0 25px;
+	}
+
+	.portfolio-card-col {
+		width: 50%;
+		padding: 25px 0 0 25px;
+	}
+
+	.row {
+		margin-top: -25px;
+		margin-left: -25px;
+	}
+}
+
+@media screen and (max-width: 714px) {
+
+	body {
+		line-height: 2em;
+		font-size: 10pt;
+		letter-spacing: 0;
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-size: 1.5em;
+		margin: 0 0 0.5em 0;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	header {
+		margin: 0 0 2em 0;
+	}
+
+	header>p {
+		font-size: 1.25em;
+	}
+
+	hr {
+		margin: 1.5em 0 2em 0;
+	}
+
+	#about {
+		padding: 3em 0;
+	}
+
+	.image.profile {
+		width: 15em;
+		height: 15em;
+		margin-bottom: 0;
+	}
+
+	.portfolio-card-col {
+		width: 100%;
+		padding: 15px 0 0 15px;
+	}
+
+	.row {
+		margin-top: -15px;
+		margin-left: -15px;
+	}
+
+	.box {
+		margin: 0 0 20px 0;
+		max-width: 32em;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 30px 20px 30px 20px;
+	}
+
+	.box .image.portfolio {
+		position: relative;
+		left: 20px;
+		top: 20px;
+		margin: -50px 0 50px -40px;
+		width: auto;
+	}
+
+	.background {
+		padding: 3em 0;
+		text-align: center;
+	}
+
+	.profile-header-col {
+		width: 90%;
+		padding: 25px 0 0 25px;
+	}
+}
